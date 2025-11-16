@@ -202,7 +202,10 @@ td.slot {
     min-height: 80px;
     cursor: pointer;
     background: #06050b;
-    color: var(--ink);
+    color: #fffef9;
+    font-family: "Space Grotesk", "Poppins", "Segoe UI", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
     vertical-align: top;
     word-break: break-word;
     white-space: pre-wrap;
@@ -221,11 +224,11 @@ td.slot:focus {
     background: #2d2d3e;
     color: #8a8995;
 }
-td.slot.study { background: var(--activity-study); }
-td.slot.exercise { background: var(--activity-exercise); }
-td.slot.gaming { background: var(--activity-gaming); }
-td.slot.social { background: var(--activity-social); }
-td.slot.other { background: var(--activity-other); }
+td.slot.study { background: var(--activity-study); color: #3a2a12; }
+td.slot.exercise { background: var(--activity-exercise); color: #0f2e1b; }
+td.slot.gaming { background: var(--activity-gaming); color: #0c1f2b; }
+td.slot.social { background: var(--activity-social); color: #2b0f38; }
+td.slot.other { background: var(--activity-other); color: #1f1640; }
 .editor-panel {
     border: 3px solid var(--stroke);
     background: var(--card);
