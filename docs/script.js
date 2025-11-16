@@ -35,6 +35,7 @@ const loginCallout = document.getElementById("login-callout");
 const DEFAULT_STATUS_TEXT = (statusElement?.textContent || "Gemmes automatisk").trim();
 const EDITOR_EMPTY_DEFAULT = (editorEmptyState?.textContent || "").trim();
 const EDITOR_EMPTY_LOCKED_TEXT = "Log ind i admin-tilstand for at redigere skemaet.";
+const SERVER_REQUIRED_TEXT = "Kør backend'en (npm start) for at redigere skemaet.";
 
 let statusTimerId = null;
 let loginCalloutTimerId = null;
