@@ -4,7 +4,7 @@ const crypto = require("crypto");
 const express = require("express");
 const compression = require("compression");
 
-require("dotenv").config();
+require("dotenv").config({ path: path.join(__dirname, "admin.env") });
 
 const app = express();
 const PORT = process.env.PORT || 4173;
