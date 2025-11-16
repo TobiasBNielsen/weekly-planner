@@ -6,7 +6,11 @@
     "22:00", "23:00"
 ];
 
-const DAYS = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"];
+const DAY_LABELS = ["Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag", "Søndag"];
+const DAYS = DAY_LABELS.map(label => ({
+    label,
+    key: slugify(label)
+}));
 const VALID_ACTIVITIES = new Set(["study", "exercise", "gaming", "social", "other"]);
 
 const scheduleBody = document.getElementById("schedule-body");
@@ -42,6 +46,30 @@ let scheduleData = {};
 
 function storageKeyForCell(cell) {
     return `${cell.dataset.day}_${cell.dataset.time}`;
+}
+
+function slugify(text = "") {
+    return text
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-z0-9]+/gi, "")
+        .toLowerCase();
+}
+
+function normalizeScheduleData(rawData) {
+    const normalized = {};
+    if (!rawData || typeof rawData !== "object") {
+        return normalized;
+    }
+    Object.entries(rawData).forEach(([key, value]) => {
+        const [rawDay, time] = key.split("_");
+        if (!rawDay || !time) {
+            return;
+        }
+        const normalizedKey = `${slugify(rawDay)}_${time}`;
+        normalized[normalizedKey] = value;
+    });
+    return normalized;
 }
 
 function syncAuthUI() {
@@ -198,7 +226,8 @@ function createTable() {
         DAYS.forEach(day => {
             const cell = document.createElement("td");
             cell.className = "slot";
-            cell.dataset.day = day;
+            cell.dataset.day = day.key;
+            cell.dataset.dayLabel = day.label;
             cell.dataset.time = time;
             cell.contentEditable = "false";
             cell.spellcheck = false;
@@ -271,7 +300,8 @@ async function loadSchedule() {
         if (!response.ok) {
             throw new Error("Kunne ikke hente schedule.json");
         }
-        scheduleData = await response.json();
+        const rawData = await response.json();
+        scheduleData = normalizeScheduleData(rawData);
     } catch (error) {
         console.warn("Kunne ikke hente skemaet fra fil, bruger tomt skema", error);
         scheduleData = {};
@@ -380,7 +410,8 @@ function updateEditorPanel(cell) {
 
     editorBody.hidden = false;
     editorEmptyState.hidden = true;
-    editorMeta.textContent = `${cell.dataset.day} kl. ${cell.dataset.time}`;
+    const dayLabel = cell.dataset.dayLabel || cell.dataset.day;
+    editorMeta.textContent = `${dayLabel} kl. ${cell.dataset.time}`;
     editorText.value = cell.textContent || "";
     editorActivity.value = cell.dataset.activity || "";
 }
