@@ -36,6 +36,7 @@ const DEFAULT_STATUS_TEXT = (statusElement?.textContent || "Gemmes automatisk").
 const EDITOR_EMPTY_DEFAULT = (editorEmptyState?.textContent || "").trim();
 const EDITOR_EMPTY_LOCKED_TEXT = "Log ind i admin-tilstand for at redigere skemaet.";
 const SERVER_REQUIRED_TEXT = "Kør backend'en (npm start) for at redigere skemaet.";
+const isHostedReadOnly = Boolean(window.location.hostname?.includes("github.io"));
 
 let statusTimerId = null;
 let loginCalloutTimerId = null;
@@ -74,33 +75,48 @@ function normalizeScheduleData(rawData) {
 }
 
 function syncAuthUI() {
+    const showAuthControls = !isHostedReadOnly;
     document.body?.classList.toggle("is-authenticated", isAuthenticated && serverAvailable);
 
     if (loginButton) {
-        loginButton.disabled = !serverAvailable;
-        if (!serverAvailable) {
-            loginButton.textContent = "Kun visning";
-            loginButton.setAttribute("aria-expanded", "false");
+        if (!showAuthControls) {
+            loginButton.style.display = "none";
         } else {
-            loginButton.textContent = isAuthenticated ? "Log ud" : "Log ind";
-            loginButton.setAttribute("aria-expanded", String(isAuthenticated));
+            loginButton.disabled = !serverAvailable;
+            if (!serverAvailable) {
+                loginButton.textContent = "Kun visning";
+                loginButton.setAttribute("aria-expanded", "false");
+            } else {
+                loginButton.textContent = isAuthenticated ? "Log ud" : "Log ind";
+                loginButton.setAttribute("aria-expanded", String(isAuthenticated));
+            }
         }
     }
 
     if (statusElement) {
-        const text = !serverAvailable
-            ? "Kun visning"
-            : isAuthenticated
-                ? DEFAULT_STATUS_TEXT
-                : "Login for at redigere";
-        statusElement.textContent = text;
-        statusElement.classList.remove("status-pill--active");
+        if (!showAuthControls) {
+            statusElement.textContent = "Kun visning";
+            statusElement.classList.remove("status-pill--active");
+        } else {
+            const text = !serverAvailable
+                ? "Kun visning"
+                : isAuthenticated
+                    ? DEFAULT_STATUS_TEXT
+                    : "Login for at redigere";
+            statusElement.textContent = text;
+            statusElement.classList.remove("status-pill--active");
+        }
     }
 
     if (loginCallout) {
-        loginCallout.textContent = serverAvailable
-            ? "Log ind for at redigere skemaet."
-            : SERVER_REQUIRED_TEXT;
+        if (!showAuthControls) {
+            loginCallout.style.display = "none";
+        } else {
+            loginCallout.textContent = serverAvailable
+                ? "Log ind for at redigere skemaet."
+                : SERVER_REQUIRED_TEXT;
+            loginCallout.style.display = "";
+        }
     }
 
     refreshCellInteractivity();
