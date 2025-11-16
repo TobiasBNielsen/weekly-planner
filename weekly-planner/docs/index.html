@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mit Ugeskema</title>
+    <meta name="description" content="Planlæg og farvekod din uge. Ændringerne gemmes automatisk i browseren.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div>
+            <p class="eyebrow">Ugeplanlægning</p>
+            <h1>Mit Ugeskema</h1>
+            <p>Planlæg dine aktiviteter, farv blokkene og lad alt blive gemt automatisk.</p>
+        </div>
+        <div class="topbar-meta">
+            <div class="status-pill" id="autosave-status" role="status" aria-live="polite">Gemmes automatisk</div>
+            <button type="button" class="login-button" id="login-button" aria-expanded="false">Log ind</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <p class="login-callout" id="login-callout">Log ind for at redigere skemaet.</p>
+
+        <section class="controls" data-auth-only="flex">
+            <label class="sr-only" for="activity-selector">Vælg aktivitet til farvekodning</label>
+            <select id="activity-selector">
+                <option value="">Vælg aktivitet...</option>
+                <option value="study">Studie</option>
+                <option value="exercise">Træning</option>
+                <option value="gaming">Gaming</option>
+                <option value="social">Socialt</option>
+                <option value="other">Andet</option>
+            </select>
+            <button id="clear-all" type="button">Ryd hele skemaet</button>
+        </section>
+
+        <p class="hint" data-auth-only="block">Vælg en aktivitet og klik på et felt for at farve det. Højreklik eller brug panelet herunder for at rydde enkelte felter.</p>
+
+        <section class="legend" aria-label="Farvekoder">
+            <div class="legend-item"><span class="color study"></span><span>Studie</span></div>
+            <div class="legend-item"><span class="color exercise"></span><span>Træning</span></div>
+            <div class="legend-item"><span class="color gaming"></span><span>Gaming</span></div>
+            <div class="legend-item"><span class="color social"></span><span>Socialt</span></div>
+            <div class="legend-item"><span class="color other"></span><span>Andet</span></div>
+        </section>
+
+        <section class="planner-grid">
+            <div class="table-wrapper">
+                <table id="schedule">
+                    <caption>Oversigt over din uge</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tid</th>
+                            <th scope="col">Mandag</th>
+                            <th scope="col">Tirsdag</th>
+                            <th scope="col">Onsdag</th>
+                            <th scope="col">Torsdag</th>
+                            <th scope="col">Fredag</th>
+                            <th scope="col">Lørdag</th>
+                            <th scope="col">Søndag</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schedule-body"></tbody>
+                </table>
+            </div>
+
+            <aside class="editor-panel" id="cell-editor" data-auth-only="flex">
+                <h2>Rediger felt</h2>
+                <p class="editor-empty" id="editor-empty">Klik på et felt i skemaet for at redigere eller rydde det.</p>
+                <div class="editor-body" id="editor-body" hidden>
+                    <p class="editor-meta" id="editor-meta"></p>
+
+                    <label for="editor-text">Noter</label>
+                    <textarea id="editor-text" rows="5" placeholder="F.eks. Team-møde eller Træning"></textarea>
+
+                    <label for="editor-activity">Farve</label>
+                    <select id="editor-activity">
+                        <option value="">Ingen farve</option>
+                        <option value="study">Studie</option>
+                        <option value="exercise">Træning</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="social">Socialt</option>
+                        <option value="other">Andet</option>
+                    </select>
+
+                    <div class="editor-actions">
+                        <button type="button" id="editor-clear" class="ghost">Ryd feltet</button>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Lavet til Tobias' planlægning · Data gemmes lokalt i browseren
+    </footer>
+
+    <div class="login-modal" id="login-modal" hidden role="dialog" aria-modal="true" aria-labelledby="login-title">
+        <div class="login-modal__card">
+            <button type="button" class="login-modal__close" id="login-close" aria-label="Luk">×</button>
+            <h2 id="login-title">Administrator login</h2>
+            <p>Kun godkendte personer kan redigere skemaet.</p>
+            <form id="login-form">
+                <label for="login-username">Brugernavn</label>
+                <input type="text" id="login-username" name="username" autocomplete="username" required>
+
+                <label for="login-password">Adgangskode</label>
+                <input type="password" id="login-password" name="password" autocomplete="current-password" required>
+
+                <p class="login-hint-text">Kontakt administratoren for at få login-oplysninger.</p>
+                <p class="login-error" id="login-error" role="alert" hidden>Forkert brugernavn eller adgangskode.</p>
+
+                <button type="submit" class="login-submit">Log ind</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

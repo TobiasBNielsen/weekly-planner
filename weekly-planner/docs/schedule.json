@@ -1,0 +1,486 @@
+{
+  "Mandag_07:00": {
+    "text": "Studie (Hjemme)",
+    "activity": "study"
+  },
+  "Mandag_08:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Mandag_09:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Mandag_10:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Mandag_11:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Mandag_12:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Mandag_13:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Tirsdag_07:00": {
+    "text": "Studie (Hjemme)",
+    "activity": "study"
+  },
+  "Tirsdag_08:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Tirsdag_09:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Tirsdag_10:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Tirsdag_11:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Tirsdag_12:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Tirsdag_13:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Onsdag_08:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Onsdag_07:00": {
+    "text": "Studie (Hjemme)",
+    "activity": "study"
+  },
+  "Onsdag_09:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Onsdag_10:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Onsdag_11:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Onsdag_12:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Onsdag_13:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Torsdag_07:00": {
+    "text": "Studie (Hjemme)",
+    "activity": "study"
+  },
+  "Torsdag_08:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Torsdag_09:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Torsdag_10:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Torsdag_11:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Torsdag_12:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Torsdag_13:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Fredag_07:00": {
+    "text": "Studie (Hjemme)",
+    "activity": "study"
+  },
+  "Fredag_08:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Fredag_09:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Fredag_10:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Fredag_11:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Fredag_12:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Fredag_13:00": {
+    "text": "",
+    "activity": "study"
+  },
+  "Mandag_14:00": {
+    "text": "Hjemmetræning",
+    "activity": "exercise"
+  },
+  "Onsdag_14:00": {
+    "text": "Hjemmetræning",
+    "activity": "exercise"
+  },
+  "Fredag_14:00": {
+    "text": "Hjemmetræning",
+    "activity": "exercise"
+  },
+  "Tirsdag_14:00": {
+    "text": "Pusterum (har brug for ro efter skole)",
+    "activity": "other"
+  },
+  "Torsdag_14:00": {
+    "text": "Pusterum (har brug for ro efter skole)",
+    "activity": "other"
+  },
+  "Mandag_15:00": {
+    "text": "Gaming",
+    "activity": "gaming"
+  },
+  "Tirsdag_15:00": {
+    "text": "Gaming",
+    "activity": "gaming"
+  },
+  "Onsdag_15:00": {
+    "text": "Gaming",
+    "activity": "gaming"
+  },
+  "Torsdag_15:00": {
+    "text": "Gaming",
+    "activity": "gaming"
+  },
+  "Fredag_15:00": {
+    "text": "Gaming",
+    "activity": "gaming"
+  },
+  "Fredag_16:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Torsdag_16:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Onsdag_16:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Tirsdag_16:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Mandag_16:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Mandag_17:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Tirsdag_17:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Onsdag_17:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Torsdag_17:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Fredag_17:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Mandag_18:00": {
+    "text": "Aftensmad + oprydning",
+    "activity": "other"
+  },
+  "Mandag_19:00": {
+    "text": "",
+    "activity": "other"
+  },
+  "Tirsdag_18:00": {
+    "text": "Aftensmad + oprydning",
+    "activity": "other"
+  },
+  "Tirsdag_19:00": {
+    "text": "",
+    "activity": "other"
+  },
+  "Onsdag_18:00": {
+    "text": "Aftensmad + oprydning",
+    "activity": "other"
+  },
+  "Onsdag_19:00": {
+    "text": "",
+    "activity": "other"
+  },
+  "Torsdag_18:00": {
+    "text": "Aftensmad + oprydning",
+    "activity": "other"
+  },
+  "Torsdag_19:00": {
+    "text": "",
+    "activity": "other"
+  },
+  "Fredag_18:00": {
+    "text": "Aftensmad + oprydning",
+    "activity": "other"
+  },
+  "Fredag_19:00": {
+    "text": "",
+    "activity": "other"
+  },
+  "Mandag_20:00": {
+    "text": "Gaming",
+    "activity": "gaming"
+  },
+  "Mandag_21:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Tirsdag_20:00": {
+    "text": "Gaming",
+    "activity": "gaming"
+  },
+  "Tirsdag_21:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Onsdag_20:00": {
+    "text": "Gaming",
+    "activity": "gaming"
+  },
+  "Torsdag_20:00": {
+    "text": "Gaming",
+    "activity": "gaming"
+  },
+  "Torsdag_21:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Fredag_20:00": {
+    "text": "Gaming",
+    "activity": "gaming"
+  },
+  "Fredag_21:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Onsdag_21:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Mandag_22:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Tirsdag_22:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Onsdag_22:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Torsdag_22:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Fredag_22:00": {
+    "text": "",
+    "activity": "gaming"
+  },
+  "Mandag_23:00": {
+    "text": "Lektier",
+    "activity": "other"
+  },
+  "Tirsdag_23:00": {
+    "text": "Lektier",
+    "activity": "other"
+  },
+  "Onsdag_23:00": {
+    "text": "Lektier",
+    "activity": "other"
+  },
+  "Torsdag_23:00": {
+    "text": "Lektier",
+    "activity": "other"
+  },
+  "Fredag_23:00": {
+    "text": "Lektier",
+    "activity": "other"
+  },
+  "Lørdag_06:00": {
+    "text": "Hjemme hos forældre",
+    "activity": "social"
+  },
+  "Søndag_06:00": {
+    "text": "Hjemme hos forældre",
+    "activity": "social"
+  },
+  "Lørdag_07:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_07:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_08:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_08:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_09:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_09:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_10:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_10:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_11:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_12:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_11:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_12:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_13:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_13:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_14:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_14:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_16:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_16:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_15:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_15:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_17:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_17:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_18:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_18:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_19:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_19:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_20:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_20:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_21:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_22:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_21:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_22:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Lørdag_23:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "Søndag_23:00": {
+    "text": "",
+    "activity": "social"
+  }
+}
