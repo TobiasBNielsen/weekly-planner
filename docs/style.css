@@ -162,6 +162,13 @@ body.is-authenticated .login-callout {
     gap: 1.5rem;
     align-items: start;
 }
+body:not(.is-authenticated) .planner-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+body:not(.is-authenticated) .table-wrapper {
+    grid-column: 1 / -1;
+}
 .table-wrapper {
     border: 3px solid var(--stroke);
     background: #10101a;
