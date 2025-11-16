@@ -30,6 +30,7 @@ const loginError = document.getElementById("login-error");
 const loginCallout = document.getElementById("login-callout");
 const DEFAULT_STATUS_TEXT = (statusElement?.textContent || "Gemmes automatisk").trim();
 const EDITOR_EMPTY_DEFAULT = (editorEmptyState?.textContent || "").trim();
+const EDITOR_EMPTY_LOCKED_TEXT = "Log ind i admin-tilstand for at redigere skemaet.";
 
 let statusTimerId = null;
 let loginCalloutTimerId = null;
@@ -49,6 +50,8 @@ function syncAuthUI() {
     if (loginButton) {
         loginButton.disabled = !serverAvailable;
         if (!serverAvailable) {
+            loginButton.textContent = "Kun visning";
+            loginButton.setAttribute("aria-expanded", "false");
         } else {
             loginButton.textContent = isAuthenticated ? "Log ud" : "Log ind";
             loginButton.setAttribute("aria-expanded", String(isAuthenticated));
@@ -57,7 +60,7 @@ function syncAuthUI() {
 
     if (statusElement) {
         const text = !serverAvailable
-            ? ""
+            ? "Kun visning"
             : isAuthenticated
                 ? DEFAULT_STATUS_TEXT
                 : "Login for at redigere";
