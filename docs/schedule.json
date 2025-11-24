@@ -111,10 +111,6 @@
     "text": "Hjemmetræning",
     "activity": "exercise"
   },
-  "fredag_14:00": {
-    "text": "Hjemmetræning",
-    "activity": "exercise"
-  },
   "tirsdag_14:00": {
     "text": "Pusterum (har brug for ro efter skole)",
     "activity": "other"
@@ -137,14 +133,6 @@
   },
   "torsdag_15:00": {
     "text": "Gaming",
-    "activity": "gaming"
-  },
-  "fredag_15:00": {
-    "text": "Gaming",
-    "activity": "gaming"
-  },
-  "fredag_16:00": {
-    "text": "",
     "activity": "gaming"
   },
   "torsdag_16:00": {
@@ -176,10 +164,6 @@
     "activity": "gaming"
   },
   "torsdag_17:00": {
-    "text": "",
-    "activity": "gaming"
-  },
-  "fredag_17:00": {
     "text": "",
     "activity": "gaming"
   },
@@ -215,14 +199,6 @@
     "text": "",
     "activity": "other"
   },
-  "fredag_18:00": {
-    "text": "Aftensmad + oprydning",
-    "activity": "other"
-  },
-  "fredag_19:00": {
-    "text": "",
-    "activity": "other"
-  },
   "mandag_20:00": {
     "text": "Gaming",
     "activity": "gaming"
@@ -251,14 +227,6 @@
     "text": "",
     "activity": "gaming"
   },
-  "fredag_20:00": {
-    "text": "Gaming",
-    "activity": "gaming"
-  },
-  "fredag_21:00": {
-    "text": "",
-    "activity": "gaming"
-  },
   "onsdag_21:00": {
     "text": "",
     "activity": "gaming"
@@ -279,10 +247,6 @@
     "text": "",
     "activity": "gaming"
   },
-  "fredag_22:00": {
-    "text": "",
-    "activity": "gaming"
-  },
   "mandag_23:00": {
     "text": "Lektier",
     "activity": "other"
@@ -296,10 +260,6 @@
     "activity": "other"
   },
   "torsdag_23:00": {
-    "text": "Lektier",
-    "activity": "other"
-  },
-  "fredag_23:00": {
     "text": "Lektier",
     "activity": "other"
   },
@@ -444,6 +404,46 @@
     "activity": "social"
   },
   "sndag_23:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "fredag_14:00": {
+    "text": "I Randers med vennerne",
+    "activity": "social"
+  },
+  "fredag_16:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "fredag_15:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "fredag_17:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "fredag_18:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "fredag_19:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "fredag_20:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "fredag_21:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "fredag_22:00": {
+    "text": "",
+    "activity": "social"
+  },
+  "fredag_23:00": {
     "text": "",
     "activity": "social"
   }
