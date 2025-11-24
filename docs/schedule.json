@@ -1,14 +1,6 @@
 {
-  "mandag_07:00": {
-    "text": "Studie (Hjemme)",
-    "activity": "study"
-  },
-  "mandag_08:00": {
-    "text": "",
-    "activity": "study"
-  },
   "mandag_09:00": {
-    "text": "",
+    "text": "Studie (hjemme)",
     "activity": "study"
   },
   "mandag_10:00": {
@@ -27,16 +19,8 @@
     "text": "",
     "activity": "study"
   },
-  "tirsdag_07:00": {
-    "text": "Studie (Hjemme)",
-    "activity": "study"
-  },
-  "tirsdag_08:00": {
-    "text": "",
-    "activity": "study"
-  },
   "tirsdag_09:00": {
-    "text": "",
+    "text": "Studie (hjemme)",
     "activity": "study"
   },
   "tirsdag_10:00": {
@@ -55,16 +39,8 @@
     "text": "",
     "activity": "study"
   },
-  "onsdag_08:00": {
-    "text": "",
-    "activity": "study"
-  },
-  "onsdag_07:00": {
-    "text": "Studie (Hjemme)",
-    "activity": "study"
-  },
   "onsdag_09:00": {
-    "text": "",
+    "text": "Studie (hjemme)",
     "activity": "study"
   },
   "onsdag_10:00": {
@@ -83,12 +59,8 @@
     "text": "",
     "activity": "study"
   },
-  "torsdag_07:00": {
-    "text": "Studie (På skolen)",
-    "activity": "study"
-  },
   "torsdag_08:00": {
-    "text": "",
+    "text": "Studie(på skolen)",
     "activity": "study"
   },
   "torsdag_09:00": {
@@ -111,16 +83,8 @@
     "text": "",
     "activity": "study"
   },
-  "fredag_07:00": {
-    "text": "Studie (Hjemme)",
-    "activity": "study"
-  },
-  "fredag_08:00": {
-    "text": "",
-    "activity": "study"
-  },
   "fredag_09:00": {
-    "text": "",
+    "text": "Studie (hjemme)",
     "activity": "study"
   },
   "fredag_10:00": {
@@ -340,11 +304,11 @@
     "activity": "other"
   },
   "lrdag_06:00": {
-    "text": "Hjemme hos forældre",
+    "text": "I Randers med vennerne",
     "activity": "social"
   },
   "sndag_06:00": {
-    "text": "Hjemme hos forældre",
+    "text": "I Randers med vennerne",
     "activity": "social"
   },
   "lrdag_07:00": {
